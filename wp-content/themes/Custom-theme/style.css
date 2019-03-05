@@ -38,7 +38,7 @@ li a {
 
 /*Position for the footer menu links*/
 .secondary-nav-item {
-
+    position: relative;
     display: inline-block;
     padding: 10px;
     float: right;
@@ -53,4 +53,35 @@ li a {
     border-left: none !important;
 }
 
+/*Carousel slider*/
+.carousel-inner .carousel-item-right.active,
+.carousel-inner .carousel-item-next {
+    transform: translateX(33.33%);
+}
 
+.carousel-inner .carousel-item-left.active,
+.carousel-inner .carousel-item-prev {
+    transform: translateX(-33.33%)
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{
+    transform: translateX(0);
+}
+.carousel-inner {
+    height: 165px;
+}
+
+/*Fix to appear all the images that we need to be in the carousel*/
+.d-block {
+    float: left !important;
+}
+
+/*Take the previous and the next arrows outside from the carousel*/
+.carousel-control-prev-icon{
+    margin-left: -300px;
+}
+
+.carousel-control-next-icon{
+    margin-right:-300px;
+}

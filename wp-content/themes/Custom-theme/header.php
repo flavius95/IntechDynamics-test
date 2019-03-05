@@ -33,13 +33,8 @@
                     <a class="main-nav-item" href="tel:(800) 508-2265"><img src="<?php echo get_template_directory_uri();?>/images/iphone1.png" alt="phone"/> (800) 508-2265</a>
                 </nav>
             </div>
-        </div>
+        </div>`
     </div>
-    <!--Insert the slider with pictures-->
-    <div class="slider-wrapper">
-
-    </div>
-</div>
 <!--Set the static text for left side of the page and create the submit button-->
 <div class="container">
     <div class="blog-header">
@@ -47,3 +42,41 @@
         <p class="lead blog-description">Vestibulum placerat dolor sed lacinia ornare. In sit amet erat viverra, vulputate urna iaculis, venenatis ex. Donec porttitor mattis justo id ornare.</p>
         <button role="button" type="submit">Submit</button>
     </div>
+</div>
+    <!--Insert the slider with pictures-->
+    <!-- Wrapper for slides -->
+    <div class="container text-center my-3">
+        <div class="row mx-auto my-auto">
+            <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <img class="d-block col-4 img-fluid" src="<?php echo get_template_directory_uri();?>/images/slider1.jpeg">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block col-4 img-fluid" src="<?php echo get_template_directory_uri();?>/images/slider2.jpeg">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block col-4 img-fluid" src="<?php echo get_template_directory_uri();?>/images/slider3.jpeg">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block col-4 img-fluid" src="<?php echo get_template_directory_uri();?>/images/slider1.jpeg">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block col-4 img-fluid" src="<?php echo get_template_directory_uri();?>/images/slider2.jpeg">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block col-4 img-fluid" src="<?php echo get_template_directory_uri();?>/images/slider3.jpeg">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#recipeCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#recipeCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

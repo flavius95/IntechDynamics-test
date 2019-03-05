@@ -3,7 +3,7 @@
  * Used to load the style.css in page.
  */
 wp_enqueue_style('style', get_stylesheet_uri());
-
+wp_enqueue_script('script', get_template_directory_uri() . '/custom.js', array('jquery'), 1.0,true);
 /*
  * Function created for custom menus.
  */
