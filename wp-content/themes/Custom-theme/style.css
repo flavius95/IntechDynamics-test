@@ -1,0 +1,56 @@
+/*
+Theme Name: Custom Theme
+
+Description: Theme for my Wordpress project with Bootstrap for styling.
+
+Author: Ilina Flavius Daniel
+
+Version: 1.0
+*/
+
+/*Inserts the background picture*/
+body {
+    background: url("images/background.jpeg");
+}
+
+/*Positioning the navigation header menu*/
+.main-nav a {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    float: right;
+    font-weight: 500;
+    border-left: 1px solid #ffffff;
+}
+
+/*Alignment for the footer menu*/
+li {
+    display: inline;
+    float: right;
+}
+
+li a {
+    display: inline;
+    text-align: center;
+    padding: 14px 16px;
+    alignment: center;
+}
+
+/*Position for the footer menu links*/
+.secondary-nav-item {
+
+    display: inline-block;
+    padding: 10px;
+    float: right;
+    font-weight: 500;
+    border-left: 1px solid #ffffff;
+}
+
+/*Special for privacy menu link so that it won't put any border to it*/
+.privacy {
+    padding: 10px;
+    display: inline-block;
+    border-left: none !important;
+}
+
+
