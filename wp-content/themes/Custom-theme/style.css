@@ -8,12 +8,19 @@ Author: Ilina Flavius Daniel
 Version: 1.0
 */
 
-/*Inserts the background picture*/
-body {
-    background: url("images/background.jpeg");
+/*Set the background color.*/
+html {
+    background-color: #F2F2F2;
 }
 
-/*Positioning the navigation header menu*/
+/*Resize the background picture.*/
+body {
+    background: url("images/background.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 70%;
+}
+
+/*Positioning the navigation header menu.*/
 .main-nav a {
     position: relative;
     display: inline-block;
@@ -23,20 +30,32 @@ body {
     border-left: 1px solid #ffffff;
 }
 
-/*Alignment for the footer menu*/
-li {
-    display: inline;
-    float: right;
+/*Remove the border from phone number.*/
+.phonenb {
+    border:none !important;
 }
 
-li a {
+/*Alignment for the footer menu.*/
+footer .nav li {
     display: inline;
+    float: left;
+}
+
+footer .nav {
+    float: left;
+}
+footer .nav li a {
     text-align: center;
     padding: 14px 16px;
-    alignment: center;
+    color: #000000;
 }
 
-/*Position for the footer menu links*/
+footer .nav li a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+/*Position for the footer menu links.*/
 .secondary-nav-item {
     position: relative;
     display: inline-block;
@@ -46,14 +65,14 @@ li a {
     border-left: 1px solid #ffffff;
 }
 
-/*Special for privacy menu link so that it won't put any border to it*/
+/*Special for privacy menu link so that it won't put any border to it.*/
 .privacy {
     padding: 10px;
     display: inline-block;
     border-left: none !important;
 }
 
-/*Carousel slider*/
+/*Carousel slider.*/
 .carousel-inner .carousel-item-right.active,
 .carousel-inner .carousel-item-next {
     transform: translateX(33.33%);
@@ -70,18 +89,157 @@ li a {
 }
 .carousel-inner {
     height: 165px;
+    margin-top: 20px;
 }
 
-/*Fix to appear all the images that we need to be in the carousel*/
+/*Fix to appear all the images that we need to be in the carousel.*/
 .d-block {
     float: left !important;
 }
 
-/*Take the previous and the next arrows outside from the carousel*/
-.carousel-control-prev-icon{
-    margin-left: -300px;
+/*Take the previous and the next arrows outside from the carousel.*/
+.carousel-control-prev{
+    width: 5% !important;
+    left: -40px !important;
 }
 
-.carousel-control-next-icon{
-    margin-right:-300px;
+.carousel-control-next{
+    width: 5% !important;
+    right: -40px !important;
+}
+.carousel-control-prev,
+.carousel-control-next {
+    opacity: .9;
+}
+
+/*Remove the logo left border.*/
+.logo {
+    border: none !important;
+}
+
+/*Dropdown categories align.*/
+.dropbutton {
+    background-color: #688A08;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    display: block;
+}
+
+.dropbutton:hover, .dropbutton:focus {
+    background-color: #688A08;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content ul {
+    float:left;
+    list-style: none;
+}
+
+.dropdown-content ul li a{
+    text-align: right;
+    font-size: 13px;
+    width: 100%;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+/*Display categories in columns*/
+.show {display: block;}
+.products-select {
+    display: table;
+}
+
+/*Products box side by side alignment.*/
+.products-select ul li {
+    padding-left: 80px;
+    padding-top: 50px;
+    list-style: none;
+    display: inline-block;
+}
+
+/*Set the background color of the form.*/
+form {
+    background-color: #e5e5e5;
+}
+
+.btnradio {
+    color: #688A08;
+}
+
+.show-content {
+    background-color: #688A08;
+    width: 100px;
+    border-color: #688A08;
+    color: white;
+    margin-top: 150px;
+}
+
+/*Align the copyright text.*/
+.copyright {
+    font-size: 15px;
+    float: left;
+    line-height: 50px;
+}
+
+/*Styling for the footer section.*/
+footer {
+    background-color: #d3d3d3;
+}
+
+footer .social {
+    line-height: 50px;
+}
+
+.logotext {
+    line-height: 55px;
+}
+
+/*Change the color for the phone number in the header nav menu.*/
+.phonenb {
+    color: #688A08;
+}
+
+.phonenb:hover {
+    color: #688A08;
+    text-decoration: none;
+}
+
+.main-nav-item:hover {
+    text-decoration: none;
+    color: white;
+}
+.main-nav-item {
+    color: white;
+}
+
+.title {
+    color: white;
+}
+
+.description {
+    color: white;
 }
