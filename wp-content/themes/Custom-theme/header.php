@@ -71,27 +71,27 @@
                 <form name="productSelect" id="products-select" class="products-select" method="post" action="#submited">
                     <div class="col-md-12">
                         <ul>
-                            <li class="category-item" data-category="popInd">
+                            <li class="category-item" data-category="popInd, vegetables, music, vacations, bJobs, receip">
                                 <img src="<?php echo get_template_directory_uri();?>/images/Phone.jpeg"/>
                                 <input type="radio" name="product" value="phone" data-category="popInd" class="btnradio">
                             </li>
-                            <li class="category-item" data-category="popInd">
+                            <li class="category-item" data-category="popInd, nature, tech, spEquip, olGames">
                                 <img src="<?php echo get_template_directory_uri();?>/images/Tablet.jpeg"/>
                                 <input type="radio" name="product" value="tablet" data-category="popInd">
                             </li>
-                            <li class="category-item" data-category="popInd">
+                            <li class="category-item" data-category="popInd, receip, books, vegetables, music">
                                 <img src="<?php echo get_template_directory_uri();?>/images/Laptop.jpeg"/>
                                 <input type="radio" name="product" value="laptop" data-category="popInd">
                             </li>
-                            <li class="category-item" data-category="liveHealth">
+                            <li class="category-item" data-category="liveHealth, vegetables, popInd, music, tech">
                                 <img src="<?php echo get_template_directory_uri();?>/images/mp3.jpeg"/>
                                 <input type="radio" name="product1" value="mp3" data-category="popInd">
                             </li>
-                            <li class="category-item" data-category="liveHealth">
+                            <li class="category-item" data-category="liveHealth, bJobs, books, vegetables, vacations, receip">
                                 <img src="<?php echo get_template_directory_uri();?>/images/gps.jpeg"/>
                                 <input type="radio" name="product1" value="gps" data-category="popInd">
                             </li>
-                            <li class="category-item" data-category="liveHealth">
+                            <li class="category-item" data-category="liveHealth, popInd, spEquip, olGames, nature, receip">
                                 <img src="<?php echo get_template_directory_uri();?>/images/camera.jpeg"/>
                                 <input type="radio" name="product1" value="camera" data-category="popInd">
                             </li>
